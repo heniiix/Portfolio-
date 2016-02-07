@@ -1,0 +1,160 @@
+
+/*text*/
+header h1 {
+        
+   color: white;
+}
+
+header h3 {
+   color: white;
+}
+
+a {
+        color: grey;
+        text-decoration: none;
+}
+
+a:hover {
+        color: #3d8;
+        text-decoration: none;
+}
+
+.container > h2 {
+        margin-bottom: 20px;
+        text-align: center;
+}
+
+#about p {
+      font-size: 14px;
+}
+
+#contact p {
+        font-size: 150%;
+}
+
+#footer-menu li {
+        display: inline;
+        color: white;
+}
+
+#footer-menu {
+  margin: 0 40px 20px 0;
+}
+
+#portfolio h2 {
+        padding-bottom: 1em;
+        color: white;
+}
+
+#about ul li {
+  background: black;
+  color: white;
+  padding: 10px;
+  border-radius: 20px;
+  
+}
+
+a, p, li, h1, h2, h3 {
+  font-family: 'Oswald', sans-serif;
+}
+
+#junior {
+  font-size: 18px;
+  color: 	#e51616;
+}
+
+/*formes*/
+
+#navigation {
+   font-size: 15px;
+
+}
+
+header {
+        background-color: #1f2c38;
+        padding: 90px 10px;
+        margin-top: 50px;
+}
+
+#header {
+        margin: 50px auto 20px;
+   
+}
+
+section {
+        padding: 50px 10px;
+}
+
+.links a {
+        border: 0;
+        margin-right: 20px;
+        display: inline-block;
+        width: 48px;
+        height: 48px;
+        line-height: 48px;
+        font-size: 30px;
+        text-align: center;
+        transition: transform 250ms ease, color 250ms linear;
+        
+  
+}
+
+.links a:hover {
+        color: white;
+        transition: transform 100ms ease;
+        transform: scale(1.4);
+}
+
+.links a :last-child {
+        padding-bottom: 20px;
+}
+
+#portfolio {
+        background-color: #1f2c38;
+        margin-top: -50px;
+        padding-bottom: 10em;
+}
+
+
+footer {
+        margin-top: 50px;
+        background: #222;
+        padding: 20px;
+        color: #777;
+        
+}
+
+#about ul li {
+  display: inline-block;
+}
+
+#comp {
+  margin: -30px 0 0 20px;
+}
+
+#skills {
+  margin: 30px 20px 0 0;
+}
+
+#moi {
+  margin: -30px 0 30px 0;
+   
+}
+
+/*images*/
+
+#about img {
+       margin-top: -50px;
+       
+}
+
+.image-row-one {
+        margin-bottom: 2em;
+}
+
+#photo_developer {
+  width: 550px;
+}
+
+
+
