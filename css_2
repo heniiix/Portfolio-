@@ -1,0 +1,539 @@
+body {
+   margin:0;
+   padding:0;
+   height:100%;
+}
+
+/*text*/
+#header h1 {
+   font-size: 40px;    
+   color: white;
+}
+
+#header h3 {
+   color: white;
+}
+
+a {
+        color: grey;
+        text-decoration: none;
+}
+
+a:hover {
+        color: #3d8;
+        text-decoration: none;
+}
+
+.container > h2 {
+        margin-bottom: 20px;
+        text-align: center;
+}
+
+#about p {
+      font-size: 15px;
+}
+
+#contact p {
+        font-size: 85%;
+}
+
+#contact a:hover {
+  color: #4285f4 ;
+  text-decoration: underline;
+}
+
+#portfolio h2 {
+        padding-bottom: 1em;
+        color: white;
+        text-align: center;
+}
+
+#about ul li {
+    background: black;
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+    margin: 5px;
+    font-size: 20px;
+  
+}
+
+a, p, li, h1, h2, h3 {
+  font-family: 'Oswald', sans-serif;
+}
+
+#junior {
+  font-size: 20px;
+  color: 	#e51616 !important;
+}
+
+
+
+/*formes*/
+
+#navigation {
+   font-size: 15px;
+
+}
+
+#header {
+    background-color: #1f2c38;
+    padding: 60px 10px;
+    margin-top: -8px;
+    margin-bottom: -45px;
+}
+
+section {
+        padding: 50px 10px;
+}
+
+.links a {
+        border: 0;
+        margin-right: 20px;
+        display: inline-block;
+        width: 60px;
+        height: 56px;
+        line-height: 48px;
+        font-size: 25px;
+        text-align: center;
+        transition: transform 250ms ease, color 250ms linear;
+        
+  
+}
+
+.links a:hover {
+        color: white;
+        transition: transform 100ms ease;
+        transform: scale(1.4);
+}
+
+.links a :last-child {
+        padding-bottom: 20px;
+}
+
+#portfolio {
+        background-color: #1f2c38;
+        margin-top: -50px;
+        padding-bottom: 10em;
+}
+
+#contact {
+  position: relative;
+}
+
+#footer-wrapper {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+#footer-menu li {
+        display: inline;
+        color: white;
+        font-size: 18px;
+}
+
+#footer-menu {
+  margin-right: 35px;
+}
+
+#about {
+  padding: 60px;
+}
+
+#about p {
+  color: black;
+}
+
+
+
+#comp {
+  text-align: center;
+  font-size: 40px;
+}
+
+#skills {
+  margin: 30px 20px 0 0;
+}
+
+#moi {
+  text-align: center;
+  font-size: 40px;
+  color: #1F2C38;
+  text-decoration: underline;
+}
+
+#mail {
+  text-decoration: underline;
+  color: #e51616;
+}
+
+/*images*/
+
+#about img {
+       margin-top: 25px;
+}
+
+
+#photo_developer {
+  width: 550px;
+}
+
+#portfolio img {
+  width: 250px;
+  margin: 10px;
+  margin-left: 55px;
+}
+
+#contact h2 {
+  margin-top: 50px;
+  text-decoration: underline;
+}
+
+#contact a {
+  font-size: 15px;
+}
+
+blockquote {
+    padding: 10px 20px;
+    margin: 0 0 20px;
+    font-size: 17.5px;
+    border-left: 5px solid #1F2C38;
+}
+
+blockquote p {
+  color: #e51616 !important;
+}
+
+.img-circle{
+    width:200px;
+    height:200px;
+    border-radius:50%;
+    background-image:url("https://40.media.tumblr.com/cd44d3b60372ce9aca328c56fa57a686/tumblr_o2047aqN0K1v7rb3mo1_r1_250.jpg");
+    display:block;
+    margin-left: 42%;
+    margin-top: 4%;
+}
+
+/* FA FA-ANIMATED -----------------------------------------------*/
+
+#about_animation {
+  margin-top: 80px;
+}
+
+.projectFactsWrap .item i {
+font-size: 60px;
+  color: #1F2C38;
+
+}
+
+.number {
+  text-decoration: underline;
+}
+
+#number1, #number2, #number3, #number4,  {
+  color: #e51616 !important;
+}
+
+.item {
+  margin: 20px;
+}
+
+.item p {
+  color: black !important;
+  font-size: 18px !important;
+}
+
+
+/* SKILLS --------------------------------------------*/
+
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,300,500,700);
+
+* {
+  box-sizing: border-box;
+}
+
+#skills {
+  background-color: #222;
+}
+
+.content {
+  min-width: 1000px;
+  width: 60%;
+  max-width: 1200px;
+  height: 440px;
+  background: #222;
+  border-radius: 6px;
+  margin: 20px auto;
+}
+.stats {
+  height: 200px;
+}
+
+.graph {
+  width: 33.33%;
+  height: 200px;
+  float: left;
+  padding: 10px;
+  position: relative;
+  margin-top: 150px;
+}
+
+.middle:before, .middle:after {
+  content: "";
+  height: 80%;
+  border: 1px solid #333;
+  position: absolute;
+  top: 0; bottom: 0;
+  margin: auto;
+}
+.middle:before {
+  left: 0;
+}
+.middle:after {
+  right: 0;
+}
+
+#champData {
+  position: absolute;
+  top: 0; bottom: 0; right: -10px;
+  margin: auto;
+}
+#timeData {
+  position: absolute;
+  top: 0; bottom: 0; left: 0; right: 0;
+  margin: auto;
+}
+
+.mainInfo {
+  height: 240px;
+  padding: 20px;
+  width: calc(100% - 600px);
+  float: left;
+}
+.mainInfo span {
+  color: #999;
+}
+
+.mainInfo .aboutMe {
+  font-size: 12px;
+  color: #999;
+}
+#skills h1 {
+  color: #fff;
+  font-size: 40px;
+  margin: 0;
+  padding: 0;
+}
+#skills h2 {
+  color: #FDB45C;
+  font-size: 30px;
+  margin: 0;
+  padding: 0;
+  margin-left: 5px;
+  display: block;
+  position: absolute;
+  top: -80px; left: 80px;
+}
+
+.clearFix {
+  clear: both;
+}
+
+.playerStats {
+  margin: auto;
+  padding: 0;
+  list-style: none;
+  margin: 6px;
+}
+.playerStats li {
+  display: block;
+  height: 30px;
+  line-height: 30px;
+  color: #fff;
+}
+.playerStats li span {
+  display: inline-block;
+  width: 60%;
+  color: #999;
+}
+
+.backgroundText {
+  width: 100%;
+  height: 100%;
+  font-size: 56px;
+  color: rgba(255, 255, 255, 0.2);
+  transform: rotate(-90deg);
+  text-transform: uppercase;
+  letter-spacing: 0px;
+  text-align: center;
+}
+
+.resizing {
+  position: relative;
+  width: 90%;
+  height: 100%;
+  padding: 0;
+  position: absolute;
+  left: 0; right: 0;
+  margin: auto;
+  bottom: 0;
+}
+
+#framework {
+  color: #999;
+  text-decoration: underline;
+}
+
+/* SECTION SCROLLIFY --------------------------------------------*/
+
+
+section {
+  height:110vh;
+  margin:0;
+  font-size:150%;
+  padding-right: 0px !important; 
+  padding-left: 0px !important;
+}
+
+/* IPAD --------------------------------------------*/
+
+@media screen and (max-width: 1024px) {
+    #about p {
+      font-size: 15px;
+  }
+  
+  #moi {
+    text-align: center;
+    font-size: 50px;
+}
+  
+  #comp {
+    text-align: center;
+    font-size: 50px;
+}
+  
+  #about ul li {
+    background: black;
+    color: white;
+    padding: 11px;
+    border-radius: 20px;
+    margin: 4px;
+    font-size: 19px;
+}
+  
+  #about {
+    padding: 60px;
+}
+  
+}
+
+/* IPHONE 6 --------------------------------------------*/
+
+@media screen and (max-width: 736px) {
+      #about {
+          padding: 35px;
+      } 
+  
+       #moi {
+          text-align: center;
+          font-size: 25px;
+      }
+
+        #comp {
+          text-align: center;
+          font-size: 25px;
+      }
+        
+        #about p {
+          font-size: 8px;
+      }
+        
+        #about ul li {
+              background: black;
+              color: white;
+              padding: 4px;
+              border-radius: 20px;
+              margin: 5px;
+              font-size: 9px;
+      }
+  
+        #about img {
+          margin-top: -13px;
+      }
+  
+        .img-circle {
+          border-radius: 50%;
+          width: 155px;
+      }
+        #header h1 {
+          font-size: 30px;
+          color: white;
+      }
+        
+          #junior {
+          font-size: 15px;
+          color: #e51616 !important;
+      }
+  
+          .links a {
+            border: 0;
+            margin-right: 20px;
+            display: inline-block;
+            width: 33px;
+            height: 56px;
+            line-height: 48px;
+            font-size: 25px;
+            text-align: center;
+            transition: transform 250ms ease, color 250ms linear;
+        }
+  
+          #header {
+            background-color: #1f2c38;
+            padding: 60px 10px;
+            margin-top: 15px;
+            margin-bottom: -35px;
+        }
+
+      
+}
+
+
+/* SMALL PHONE --------------------------------------------*/
+
+@media screen and (max-width: 580px) {
+  #header {
+    background-color: #1f2c38;
+    padding: 60px 10px;
+   margin-top: -10px;
+    margin-bottom: -55px;
+}
+  
+ #about {
+    padding: 20px;
+   margin-top: 145px;
+}
+  
+  #about img {
+    display: none;
+}
+  
+  #contact h2 {
+    margin-top: 50px;
+    font-size: 25px;
+}
+  
+  #contact p {
+    font-size: 100%;
+}
+  
+  
+  
+ 
+  
+}
