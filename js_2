@@ -61,12 +61,7 @@ $.scrollify({
 
 /*------------------------------SCROLLIFY	FOOTER-----------------------------------*/
 
-$(function () {
-   $("#contact").css({
-      "height": $(window).height()
-   });
 
-});
 
 
 /*------------------------------SCROLLIFY	FOOTER-----------------------------------*/
@@ -98,27 +93,28 @@ $(function () {
  
 
 
-$('#number1').jQuerySimpleCounter({end: 5,duration: 10000});
+$('#number1').jQuerySimpleCounter({end: 9,duration: 10000});
 $('#number2').jQuerySimpleCounter({end: 100000,duration: 10000});
-$('#number3').jQuerySimpleCounter({end: 260,duration: 8000});
+$('#number3').jQuerySimpleCounter({end: 120,duration: 8000});
 $('#number4').jQuerySimpleCounter({end: 246,duration: 9000});
     
 
 /*------------------------------SKILLS-----------------------------------*/
 
 var champData = {
-    labels: ["html ", "css", "javascript", "drupal", "wordpress", "bootstrap", "jQuery", "Ajax", "Angular JS"],
+    labels: ["html", "css", "javascript", "drupal", "wordpress", "bootstrap", "jQuery", "Ajax", "Angular JS"],
     datasets: [
         {
             label: "Data",
             fillColor: "rgba(220,220,220,0.5)",
-            strokeColor: "rgba(220,220,220,0.8)",
+            strokeColor: "#fff",
             highlightFill: "rgba(220,220,220,0.75)",
             highlightStroke: "rgba(220,220,220,1)",
             data: [100, 100, 60, 80, 35, 100, 65, 20, 20]
         }
     ]
 };
+
 var ctx = document.getElementById("champData").getContext("2d");
 window.myBarChart = new Chart(ctx).Bar(champData, {responsive: true});
 
@@ -126,7 +122,7 @@ window.myBarChart = new Chart(ctx).Bar(champData, {responsive: true});
 var timeData = {
     labels: [" September", "october", "november", "december 2015", "January", "February", "March", "April", "May"],
     datasets: [
-        {
+        {   
             label: "This Year",
             fillColor: "rgba(220,220,220,0.2)",
             strokeColor: "rgba(220,220,220,1)",
@@ -134,11 +130,33 @@ var timeData = {
             pointStrokeColor: "#fff",
             pointHighlightFill: "#fff",
             pointHighlightStroke: "rgba(220,220,220,1)",
-            data: [20, 25, 35, 10, 40, 55, 70, 70, 80]
+            data: [45, 50, 55, 20, 40, 55, 70, 70, 80]
         }
     ]
 };
+
 var ctx = document.getElementById("timeData").getContext("2d");
 window.myLineChart = new Chart(ctx).Line(timeData, {responsive: true});
+
+
+/*------------------------------PORTFOLIO ISOTOPE-----------------------------------*/
+
+
+$(function(){
+  var $container = $('#Portfolio');
+
+  $container.isotope({
+    itemSelector: '.portfolio-item',
+    layoutMode: 'fitRows',
+  });
+
+  $('#filters').on( 'click', 'a', function() {
+    var filterValue = $(this).attr('data-filter');
+    $('#filters a').removeClass('active');
+    $(this).addClass('active');
+    $container.isotope({ filter: filterValue });
+  });
+});
+
 
 
