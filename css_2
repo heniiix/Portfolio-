@@ -7,6 +7,13 @@ body {
   overflow: hidden;
 }
 
+.header {
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  width: 60%;
+}
+
 hr {
     margin-top: 30px;
     margin-bottom: 20px;
@@ -14,18 +21,6 @@ hr {
     border-top: 1px solid #808080;
 }
 
-.line-separator {
-    height: 2px;
-    background: #FDB45C;
-    border-bottom: 1px solid #FDB45C;
-    margin: auto 20%;
-}
-
-
-#portfolio>.container-fluid  {
-  display: block;
-  margin-top: 1%;
-}
 
 p {
   text-transformation: none;
@@ -42,8 +37,8 @@ p {
 }
 
 a {
-        color: grey;
-        text-decoration: none;
+    color: grey;
+    text-decoration: none;
 }
 
 a:hover {
@@ -51,10 +46,6 @@ a:hover {
         text-decoration: none;
 }
 
-.container > h2 {
-        margin-bottom: 20px;
-        text-align: center;
-}
 
 #contact p {
         font-size: 85%;
@@ -66,9 +57,11 @@ a:hover {
 }
 
 #portfolio h2 {
-        color: #1F2C38;
-        text-align: center;
-        font-size: 40px;
+    color: #1F2C38;
+    text-align: center;
+    font-size: 40px;
+    padding: 2% 0;
+    border-bottom: solid 2px white;
 }
 
 #about ul li {
@@ -102,9 +95,7 @@ a:hover {
 
 #header {
     background-color: #1f2c38;
-    padding: 60px 10px;
-    margin-top: -8px;
-    margin-bottom: -45px;
+    padding: 6em 4em;
 }
 
 section {
@@ -137,12 +128,12 @@ section {
 
 #portfolio {
         background-color: #FDB45C;
-        margin-top: -50px;
-        padding-bottom: 10em;
+        padding: 4em 4em;
 }
 
 #contact {
   position: relative;
+  padding: 4em 4em;
 }
 
 #footer-wrapper {
@@ -163,7 +154,7 @@ section {
 
 
 #about {
-  padding: 60px;
+  padding: 4em 4em;
 }
 
 #text_about p {
@@ -171,6 +162,7 @@ section {
   font-family: 'Noto Sans', sans-serif;
   text-align: justify;
   font-size: 12px;
+  margin: 5% 0;
 }
 
 
@@ -188,7 +180,9 @@ section {
   text-align: center;
   font-size: 40px;
   color: #1F2C38;
-  margin: 2% auto;
+  margin: 0;
+  border-bottom: solid 2px #FDB660;
+  padding: 2% 0;
 }
 
 #mail {
@@ -211,6 +205,11 @@ section {
   margin: 2% auto;
   font-size: 40px;
   color: #FDB45C;
+  margin: 2% auto;
+  font-size: 40px;
+  color: #FDB45C;
+  border-bottom: solid 2px #1F2C38;
+  padding: 2% 0;
 }
 
 #contact a {
@@ -242,8 +241,18 @@ section {
   font-family: 'Oswald', sans-serif !important;
 }
  
+
 .contact_links a {
-   color: #1F2C38;
+    color: #1F2C38;
+    border: 0;
+    margin-right: 20px;
+    display: inline-block;
+    width: 90px;
+    height: 59px;
+    line-height: 48px;
+    font-size: 40px !important;
+    text-align: center;
+    transition: transform 250ms ease, color 250ms linear;
 }
 
 .contact_links a:hover {
@@ -295,12 +304,6 @@ blockquote p {
 
 }
 
-#portfolio_line {
-    height: 2px;
-    background: white;
-    border-bottom: 1px solid white;
-    margin: 2% 28%;
-}
 
 .portfolio-item .portfolio-image {
     overflow: hidden;
@@ -311,10 +314,11 @@ blockquote p {
 
 #portfolio p {
     color: black;
-    margin: 0 28% 2% 28%;
     font-size: 13px;
     font-family: 'Noto Sans', sans-serif;
     text-align: center;
+    padding-bottom: 2%;
+    margin: 5% 0;
 }
 
 .project-info p {
@@ -325,18 +329,18 @@ blockquote p {
 #portfolio_more {
     display: block;
     text-align: center;
-    margin: 2% auto;
+    margin: 5% auto;
 }
 
 
 #portfolio_more i {
     background-color: #1F2C38;
     color: white;
-    margin: 0 45%;
+    margin: auto;
     padding: 20px 20px;
     border-radius: 56%;
     font-size: 25px;
-    
+    display: inline-block;
 }
 
 #portfolio_more i:hover {
@@ -398,14 +402,12 @@ top: 10px;
 }
 /* FA FA-ANIMATED -----------------------------------------------*/
 .projectFactsWrap{
-    display: flex;
-  margin-top: 13%;
+  display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-}
-
-#about_animation {
-  margin-top: 40px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1%;
 }
 
 .projectFactsWrap .item i {
@@ -421,6 +423,7 @@ top: 10px;
   text-decoration: underline;
   margin: 10px auto;
   color: #9C692B important;
+  font-size: 15px;
 }
 
 #number1  #number2 , #number3 , #number4,  {
@@ -428,8 +431,11 @@ top: 10px;
 }
 
 .item {
- margin: 8% auto;
+    margin: 0% 4%;
+    font-size: 15px;
 }
+
+.text
 
 .item p {
   color: black ;
@@ -449,8 +455,13 @@ top: 10px;
 
 #skills{
   background-color: #1f2c38;
+  padding: 4em 4em;
 }
 
+#competence {
+  display: block;
+  position: relative;
+}
 
 .stats {
   height: 200px;
@@ -467,7 +478,7 @@ top: 10px;
 
 .middle:before, .middle:after {
   content: "";
-  height: 80%;
+  height: 100%;
   border: 1px solid #876C48;
   position: absolute;
   top: 0; bottom: 0;
@@ -508,9 +519,10 @@ top: 10px;
 #skills h1 {
     color: #FDB45C;
     font-size: 40px;
-    padding: 0;
     text-align: center;
-    margin: 2% auto;
+    margin: 0;
+    border-bottom: solid 2px #9C774B;
+    padding: 2% 0;
 }
 
  #skills_line {
@@ -525,7 +537,7 @@ top: 10px;
     font-family: 'Noto Sans', sans-serif;
     text-align: justify;
     font-size: 12px;
-    margin: 0 28%;
+    margin: 5% 0;
 }
 
 
@@ -541,10 +553,6 @@ top: 10px;
   display: none;
 }
 
-#wrench {
-    position: absolute;
-    margin: 30px 0 0 35px;
-}
 
 #web_dev {
     font-family: FontAwesome;
@@ -560,10 +568,14 @@ top: 10px;
 
 .fa-wrench {
     content: "\f0ad";
-    background-color: #FDB45C;
-    padding: 3%;
-    border-radius: 75%;
     color: #1F2C38;
+}
+
+.fa-wrench:before {
+    content: "\f0ad";
+    background-color: #FDB45C;
+    padding: 5px;
+    border-radius: 75%;
 }
 
 .playerStats {
@@ -788,58 +800,12 @@ section {
   
 }
 
+/*IPAD--------------------------------------------------*/
 
-/* BIG SCREEN --------------------------------------------*/
-
-@media screen and (max-width: 1200px) {
-  .item {
-      margin: 12% auto;
-  }
-   .line-separator {
-    height: 2px;
-    background: #FDB45C;
-    border-bottom: 1px solid #FDB45C;
-    margin: auto 3%;
-}
-  
-}
-
-/* IPAD --------------------------------------------*/
 
 @media screen and (max-width: 1024px) {
 
- .img-circle {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    background-image: url("http://s32.postimg.org/5u71n4fb9/Untitled_1.jpg");
-    display: inline-block;
-    margin: 3% auto;
-    margin-bottom: 0;
-}
-  
- 
-  
-  #text_about p {
-    color: black;
-    font-family: 'Noto Sans', sans-serif;
-    text-align: justify;
-    font-size: 11px;
-}
-  
-  #skills p {
-    color: white;
-    font-family: 'Noto Sans', sans-serif;
-    text-align: justify;
-    font-size: 11px;
-    margin: 0 28%;
-}
-  
-.item {
-    margin: 13% auto;
-}
-  
-  .resizing {
+.resizing {
     position: relative;
     width: 90%;
     height: 100%;
@@ -851,24 +817,9 @@ section {
     bottom: 0;
     display: none;
 }
-  
-  #wrench {
-    position: absolute;
-    margin: 30px 0 0 32%;
-}
-  
-  .graph {
-    width: 40.33%;
-    height: 200px;
-    /* float: left; */
-    padding: 10px;
-    position: relative;
-    margin-top: 70px;
-    position: absolute;
-    margin-left: 31%;
-}
-  
-  .middle:before, .middle:after {
+
+
+.middle:before, .middle:after {
     content: "";
     height: 80%;
     border: 1px solid #876C48;
@@ -877,30 +828,29 @@ section {
     bottom: 0;
     margin: auto;
     display: none;
+  }
+  
+#competence {
+  display: block;
+  position: relative;
+  left: 100%;
 }
   
-  #portfolio p {
-    color: black;
-    margin: 0 28% 2% 28%;
-    font-size: 20px;
-    font-family: 'Noto Sans', sans-serif;
-    text-align: center;
-}
-  
-  #portfolio_more i {
-    background-color: #1F2C38;
+  .playerStats li span {
+    display: inline-block;
+    width: 58%;
     color: white;
-    margin: 3% 45%;
-    padding: 20px 20px;
-    border-radius: 56%;
-    font-size: 25px;
+    font-size: 15px;
+    font-family: 'Noto Sans', sans-serif;
 }
   
-  #contact_line_2 {
-    height: 2px;
-    background: #808080;
-    border-bottom: 1px solid #808080;
-    margin: 9% 28%;
+  .playerStats li {
+    display: inline;
+    height: 30px;
+    line-height: 30px;
+    color: #fff;
+    font-size: 15px;
+    font-family: 'Noto Sans', sans-serif;
 }
   
 }
@@ -908,170 +858,18 @@ section {
 /* IPHONE 6 --------------------------------------------*/
 
 @media screen and (max-width: 736px) {
-     .links a {
-    border: 0;
-    margin-right: 20px;
-    display: inline-block;
-    width: 52px;
-    height: 56px;
-    line-height: 48px;
-    font-size: 25px !important;
-    text-align: center;
-    transition: transform 250ms ease, color 250ms linear;
+   #header {
+    background-color: #1f2c38;
+    padding: 4em 4em;
 }
   
-  .line-separator {
-    height: 2px;
-    background: #FDB45C;
-    border-bottom: 1px solid #FDB45C;
-    margin: auto 2%;
-}
-  
-  #text_about p {
-    color: black;
-    font-family: 'Noto Sans', sans-serif;
-    text-align: justify;
-    font-size: 12px;
-}
-  
-  .projectFactsWrap {
-    display: flex;
-    margin-top: 30%;
-    flex-direction: row;
-    flex-wrap: wrap;
-    display: none;
-}
-  
-  #moi {
-    text-align: center;
-    font-size: 40px;
-    color: #1F2C38;
-    margin: 4% auto;
-}
-  
-  
-  #skills h1 {
-    color: #FDB45C;
-    font-size: 40px;
-    padding: 0;
-    text-align: center;
-    margin: 4% auto;
-}
-  
-  #skills_line {
-    height: 2px;
-    background: #808080;
-    border-bottom: 1px solid #808080;
-    margin: 3% 3% 6%;
-}
-  
- #wrench {
-    position: absolute;
-    margin: 40px 0 0 16%;
-}
-  
-  #skills p {
-    color: white;
-    font-family: 'Noto Sans', sans-serif;
-    text-align: justify;
-    font-size: 11px;
-    margin: 0px 3%;
-}
-  
-  #portfolio_line {
-    height: 2px;
-    background: white;
-    border-bottom: 1px solid white;
-    margin: 2% 3%;
-}
-  
-  #portfolio p {
-    color: black;
-    margin: 6% 3% 6% 3%;
-    font-size: 15px;
-    font-family: 'Noto Sans', sans-serif;
-    text-align: center;
-}
-
-  #contact_line {
-    height: 2px;
-    background: #808080;
-    border-bottom: 1px solid #808080;
-    margin: 0% 3%;
-}
-  
-  #contact_line_2 {
-    height: 2px;
-    background: #808080;
-    border-bottom: 1px solid #808080;
-    margin: 9% 3%;
-}
-  
-  .graph {
-    width: 70.33%;
-    height: 200px;
-    /* float: left; */
-    padding: 10px;
-    position: relative;
-    margin-top: 70px;
-    position: absolute;
-    margin-left: 16%;
-}
-  
-  #contact h2 {
-    margin: 4% auto;
-    font-size: 40px;
-    color: #FDB45C;
-}
-
-  #portfolio_more i {
-    background-color: #1F2C38;
-    color: white;
-    margin: 6% 40%;
-    padding: 20px 20px;
-    border-radius: 56%;
-    font-size: 25px;
-}
-  
-  .portfolio-item .portfolio-image > img {
-    width: 100%;
-    height: auto;
-    display: block;
-    display: none;
-}
-  
-  #portfolio_more {
-    display: block;
-    text-align: center;
-    margin: -3% auto;
-}
-      
-}
-
-
-/* SMALL PHONE --------------------------------------------*/
-
-@media screen and (max-width: 667px) {
-   .links a {
-    border: 0;
-    margin-right: 20px;
-    display: inline-block;
-    width: 44px;
-    height: 56px;
-    line-height: 48px;
-    font-size: 25px !important;
-    text-align: center;
-    transition: transform 250ms ease, color 250ms linear;
-}
-  
-  
-}
-
-/* SMALL SMALL PHONE --------------------------------------------*/
-@media screen and (max-width: 568px) {
   #header h1 {
     font-size: 25px;
     color: white;
+}
+  
+  .scroll:after {
+      display: none;
 }
   
   #junior {
@@ -1081,92 +879,153 @@ section {
   
   .links a {
     border: 0;
-    margin-right: 20px;
+    margin-right: 10px;
     display: inline-block;
-    width: 19px;
+    width: 33px;
     height: 56px;
-    line-height: 19px;
-    font-size: 19px !important;
+    line-height: 48px;
+    font-size: 20px !important;
     text-align: center;
     transition: transform 250ms ease, color 250ms linear;
 }
   
-  .scroll:after {
-    content: '';
-    width: 25px;
-    height: 25px;
-    position: absolute;
-    margin: auto;
-    margin-top: -25px;
-    right: 0;
-    left: 0;
-    -webkit-animation: 3s arrow infinite ease;
-    animation: 3s arrow infinite ease;
+  #about {
+    padding: 3em 4em;
+}
+  
+  .header {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+}
+  
+  #moi {
+    text-align: center;
+    font-size: 35px;
+    color: #1F2C38;
+    margin: 0;
+    border-bottom: solid 2px #FDB660;
+    padding: 2% 0;
 }
   
   #text_about p {
     color: black;
     font-family: 'Noto Sans', sans-serif;
     text-align: justify;
-    font-size: 10px;
+    font-size: 11px;
 }
   
-  .graph {
-    width: 70.33%;
-    height: 200px;
-    /* float: left; */
-    padding: 10px;
-    position: relative;
-    margin-top: 70px;
-    position: absolute;
-    margin-left: 16%;
+  .projectFactsWrap {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1%;
     display: none;
 }
   
-  #wrench {
-    position: absolute;
-    margin: 40px 0 0 16%;
-    display: none;
+  #skills {
+    background-color: #1f2c38;
+    padding: 3em 4em;
+}
+  
+  #skills h1 {
+    color: #FDB45C;
+    font-size: 35px;
+    text-align: center;
+    margin: 0;
+    border-bottom: solid 2px #9C774B;
+    padding: 2% 0;
 }
   
   #skills p {
     color: white;
     font-family: 'Noto Sans', sans-serif;
     text-align: justify;
-    font-size: 10px;
-    margin: 0px 3%;
+    font-size: 11px;
 }
   
-  #portfolio p {
+  #competence {
+    display: block;
+    position: relative;
+    left: 100%;
+    display: none;
+}
+  
+  #portfolio {
+    background-color: #FDB45C;
+    padding: 3em 4em;
+}
+  
+  #portfolio h2 {
+    color: #1F2C38;
+    text-align: center;
+    font-size: 35px;
+    padding: 2% 0;
+    border-bottom: solid 2px white;
+}
+  
+#portfolio p {
     color: black;
-    margin: 6% 3% 6% 3%;
-    font-size: 15px;
+    font-size: 11px;
     font-family: 'Noto Sans', sans-serif;
     text-align: center;
+    padding-bottom: 2%;
+    margin: 5% 0;
+}
+  
+  #portfolio_more i {
+    background-color: #1F2C38;
+    color: white;
+    margin: 5% auto;
+    padding: 15px 15px;
+    border-radius: 56%;
+    font-size: 20px;
+    display: inline-block;
+}
+  
+  #contact {
+    position: relative;
+    padding: 3em 4em;
+}
+  
+  #contact h2 {
+    margin: 2% auto;
+    font-size: 40px;
+    color: #FDB45C;
+    margin: 2% auto;
+    font-size: 35px;
+    color: #FDB45C;
+    border-bottom: solid 2px #1F2C38;
+    padding: 2% 0;
 }
   
   #contact p {
     text-align: center;
     font-family: 'Noto Sans', sans-serif;
-    font-size: 10px;
+    font-size: 12px;
 }
   
-  #footer-wrapper p {
-    margin: 0 !important;
-    font-size: 13px !important;
+  #footer-wrapper {
+    position: absolute;
+    right: 0;
+    bottom: 9%;
+    left: 0;
+    padding: 3%;
+    background-color: #1f2c38;
+    color: white;
+    text-align: center;
 }
-  
-  #contact_line_2 {
-    height: 2px;
-    background: #808080;
-    border-bottom: 1px solid #808080;
-    margin: -2% 3%;
+      
 }
-  
-  #otherwise {
-    font-size: 15px !important;
-    font-family: 'Oswald', sans-serif !important;
-}
+
+
+
+/* SMALL SMALL PHONE --------------------------------------------*/
+@media screen and (max-width: 568px) {
+
   
 }
 
